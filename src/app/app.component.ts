@@ -9,6 +9,8 @@ import { Router } from "@angular/router";
 export class AppComponent {
   title = "go-shopping";
   abc = "Pooja";
+  visible: boolean = false;
+
   constructor(private router: Router) {
     console.log(this.abc);
   }
@@ -18,6 +20,7 @@ export class AppComponent {
   }
 
   navigateToLogin() {
-    this.router.navigate(["/login"]);
+    //this.router.navigate(["/login"]);
+    this.visible = true;
   }
 }

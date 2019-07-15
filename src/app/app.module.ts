@@ -10,6 +10,10 @@ import { ShoppingService } from "./shopping.service";
 import { LoginPageComponent } from "./login-page/login-page.component";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+//Prime Modules
+import { DialogModule } from "primeng/dialog";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { OverlayPanelModule } from "primeng/overlaypanel";
 
 @NgModule({
   declarations: [
@@ -26,7 +30,10 @@ import { ReactiveFormsModule, FormsModule } from "@angular/forms";
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    DialogModule,
+    BrowserAnimationsModule,
+    OverlayPanelModule
   ],
   providers: [ShoppingService],
   bootstrap: [AppComponent]
